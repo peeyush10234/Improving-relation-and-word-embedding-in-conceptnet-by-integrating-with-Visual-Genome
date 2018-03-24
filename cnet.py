@@ -4,7 +4,7 @@ import numpy as np
 from csc.divisi2.blending import blend
 from csc.divisi.flavors import ConceptByFeatureMatrix
 
-annotations = json.load(open('/home/salvation/Desktop/annotations_test.json'))
+annotations = json.load(open('/home/salvation/Desktop/annotations.json'))
 objects = json.load(open('/home/salvation/Desktop/objects.json'))
 predicates = json.load(open('/home/salvation/Desktop/predicates.json'))
 
@@ -13,8 +13,8 @@ for keys in annotations:
 	imgs.append(keys)
 
 
-p = np.load('/home/salvation/visual_genome_relations_1.npy')
-q = np.load('/home/salvation/vg_relationships/visual_genome_relations_3.npy')
+p = np.load('/home/salvation/visual_genome_relations.npy')
+q = np.load('/home/salvation/vg_relationships/visual_genome_relations.npy')
 
 
 # For divisi
